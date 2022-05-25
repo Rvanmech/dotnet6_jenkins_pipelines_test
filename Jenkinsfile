@@ -5,6 +5,11 @@ pipeline {
             steps {
                 sh 'dotnet build'
             }
+        },
+        stage('test') {
+            steps {
+                sh 'dotnet test'
+            }
         }
     }
 }
